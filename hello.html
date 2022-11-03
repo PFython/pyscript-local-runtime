@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PyScript Hello World</title>
+    <py-config>
+      autoclose_loader = true
+      [[runtimes]]
+      src = "pyodide/pyodide.js"
+      name = "pyodide-0.21.3"
+      lang = "python"
+    </py-config>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="/pyscript.css" />
+    <script defer src="/pyscript.js"></script>
+  </head>
+  <body>
+    Hello world! <br>
+    This is the current date and time, as computed by Python:
+    <py-script>
+      from datetime import datetime
+      now = datetime.now()
+      now.strftime("%m/%d/%Y, %H:%M:%S")
+    </py-script>
+  </body>
+  <script src="popup.js"></script>
+</html>
+

@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+"name": "G Suite Certification app",
+"description": "Link to G Suite Certification website",
+"version": "1.1",
+"icons": {
+"128": "128.png"
+},
+"app": {
+"urls": [
+"http://certification.googleapps.com/app-info/"
+],
+"launch": {
+"web_url": "http://certification.googleapps.com/"
+}
+},
+"permissions": [
+"unlimitedStorage",
+"notifications"
+]
+}
