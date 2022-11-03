@@ -21,8 +21,8 @@
     </py-config>
     <py-script>
       from datetime import datetime
-      now = datetime.now()
-      now.strftime("%m/%d/%Y, %H:%M:%S")
+      now = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+      print(now)
     </py-script>
   </body>
   <script src="popup.js"></script>
