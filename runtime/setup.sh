@@ -1,0 +1,12 @@
+wget https://pyscript.net/latest/pyscript.js
+wget https://pyscript.net/latest/pyscript.css
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide_py.tar
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.asm.js
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.asm.data
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/repodata.json
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.asm.wasm
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/packaging-21.3-py3-none-any.whl
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/distutils.tar
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/micropip-0.1-py3-none-any.whl
+wget https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyparsing-3.0.9-py3-none-any.whl
