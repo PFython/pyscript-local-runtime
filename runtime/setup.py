@@ -25,10 +25,9 @@ if __name__ == "__main__":
     Log("setup")
     for url in downloads:
         try:
-            response = requests.get(url)
-            filename = dir_path / url.split("/")[-1]
             with requests.get(url, stream=True) as r:
                 r.raise_for_status()
+                filename = dir_path / url.split("/")[-1]
                 with open(filename, 'wb') as f:
                     for chunk in r.iter_content(chunk_size=8192):
                         # If you have chunk encoded response uncomment if
