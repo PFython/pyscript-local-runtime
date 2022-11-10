@@ -2,7 +2,7 @@
 
 This repository gives a template for running PyScript and all its runtime dependencies locally e.g. to create browser extensions using Python, or offline web apps using PyScript without internet access.
 
-To download the runtime files on POSIX using wget...
+To download the runtime files on Linux/Posix using wget...
 ```shell
 cd runtime
 source setup.sh
