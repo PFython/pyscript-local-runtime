@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>PyScript Hello World</title>
-    <py-config>
-      [[runtimes]]
-      src = "runtime/pyodide.js"
-      name = "pyodide-0.21.3"
-      lang = "python"
-    </py-config>
-    <link rel="icon" type="image/png" href="/icon-128.png" />
-    <link rel="stylesheet" href="runtime/pyscript.css" />
-    <script defer src="runtime/pyscript.js"></script>
-  </head>
-  <body>
-    Hello world!<br>
-<!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
-<py-script>
-from datetime import datetime
 
-print("This is the current date and time, as computed by Python:")
-now = datetime.now()
-now.strftime("%m/%d/%Y, %H:%M:%S")
-</py-script>
-  </body>
-  <script src="finished.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PyScript Hello World</title>
+  <py-config>
+    [[interpreters]]
+    src = "interpreter/pyodide.js"
+    name = "pyodide-0.21.3"
+    lang = "python"
+  </py-config>
+  <link rel="icon" type="image/png" href="/icon-128.png" />
+  <link rel="stylesheet" href="interpreter/pyscript.css" />
+  <script defer src="interpreter/pyscript.js"></script>
+  
+</head>
+
+<body>
+  Hello world!<br>
+  <!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
+  <py-script>
+    # demo display
+    import numpy
+
+    # create a 2D array
+    a = numpy.array([[1, 2, 3], [4, 5, 6]])
+    print(a)
+
+
+  </py-script>
+</body>
+<script src="finished.js"></script>
+
 </html>
-
