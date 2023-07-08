@@ -22,8 +22,8 @@ This example is a simple Chrome Extension which creates a Popup box, renders the
 
 * The Python script is wrapped inside some simple HTML boiler-plate code in `index.html`.
 * On completion, `index.html` runs the JavaScript file `finished.js`.
-* PyScript runtime files are in `/runtime`
-* Icons are in `/images`
+* PyScript runtime files are in `/runtime`.
+* Icons are in `/images`.
 * Other magic required for Chrome to recognise this as an extension are in `manifest.json`.
 
 `index.html` must include a `<py-config>` block as follows:
@@ -45,7 +45,7 @@ And also these two lines to load PyScript locally into the browser:
 
 Now you're ready to load the unpacked extension into Chrome and run it [following this tutorial](https://www.codeinwp.com/blog/how-to-write-a-chrome-extension/#:~:text=After%20you%20have%20your%20manifest%20file%20in%20place%2C%20you%20can%20load%20up%20your%20extension%20in%20the%20Chrome%20browser%3A).
 
-Further information about getting started with Chrome Exentions is available [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/).
+Further information about getting started with Chrome Extensions is available [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/).
 
 All the best,
 Pete
