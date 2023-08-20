@@ -1,14 +1,16 @@
 # pyscript-local-runtime
 
-This repository gives a template for running PyScript and all its runtime dependencies locally e.g. to create browser extensions using Python, or offline web apps using PyScript without internet access.
+This repository gives a framework for running PyScript and all its runtime dependencies locally e.g. to create browser extensions using Python, or offline web apps using PyScript without internet access.
 
-To download the runtime files on POSIX using wget...
+PyScript and its dependency Pyodide continue to evolve and this demo is frozen at Pyodide v0.21.3. You're strongly advised to check out the [latest version of PyScript](https://pyscript.net/).
+
+All the files you need to run PyScript (at v0.21.3) are in the `/runtime` directory and you can also download them on POSIX using wget...
 ```shell
 cd runtime
 source setup.sh
 ```
 
-To download the runtime files on Windows (with Python and requests):
+... or on Windows using the helper script supplied:
 ```
 cd runtime
 python setup.py
@@ -21,8 +23,6 @@ This example is a simple Chrome Extension which creates a Popup box, renders the
 
 
 * The Python script is wrapped inside some simple HTML boiler-plate code in `index.html`.
-* On completion, `index.html` runs the JavaScript file `finished.js`.
-* PyScript runtime files are in `/runtime`
 * Icons are in `/images`
 * Other magic required for Chrome to recognise this as an extension are in `manifest.json`.
 
