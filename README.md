@@ -22,7 +22,7 @@ or on Windows using the helper script supplied:
 This example Chrome Extension launches a Popup when clicked, renders the time using Python's `datetime` module, and provides a Python REPL session for you to play with directly inside the extension.
 
 To use this extension directly, first clone it to your local machine then
-[follow this tutorial](https://www.codeinwp.com/blog/how-to-write-a-chrome-extension/#:~:text=After%20you%20have%20your%20manifest%20file%20in%20place%2C%20you%20can%20load%20up%20your%20extension%20in%20the%20Chrome%20browser%3A) to load the unpacked extension into Chrome and pin it to your Extensions toolbar.
+[follow this tutorial](https://medium.com/p/6c6b0e2e1573) to load the unpacked extension into Chrome and pin it to your Extensions toolbar.
 
 * Icons are in the `/icons` folder.
 * PyScript/Pyodide files to run this offline or as part of an extension are in the `/runtime` folder.
