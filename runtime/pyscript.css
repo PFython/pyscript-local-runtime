@@ -1,35 +1,9 @@
-/* py-config - not a component */
-py-config {
-    display: none;
-}
-/* py-{el} - components not defined */
-py-script:not(:defined) {
-    display: none;
+:not(:defined) {
+    display: none
 }
 
-py-repl:not(:defined) {
-    display: none;
-}
-
-py-title:not(:defined) {
-    display: none;
-}
-
-py-inputbox:not(:defined) {
-    display: none;
-}
-
-py-button:not(:defined) {
-    display: none;
-}
-
-py-box:not(:defined) {
-    display: none;
-}
-
-html {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-        Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+html{
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.5;
 }
 
@@ -50,7 +24,6 @@ html {
     border-right: 4px solid rgba(255, 255, 255, 0);
     animation: spinner 0.6s linear infinite;
 }
-
 @keyframes spinner {
     to {
         transform: rotate(360deg);
@@ -108,68 +81,27 @@ html {
     right: 5%;
 }
 
-/* Pop-up second layer end */
-.alert-banner {
-    position: relative;
-    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-    margin: 5px 0;
-}
-
-.alert-banner p {
-    margin: 0;
-}
-
-.py-error {
-    background-color: #ffe9e8;
-    border: solid;
-    border-color: #f0625f;
-    color: #9d041c;
-}
-
-.py-warning {
-    background-color: rgb(255, 244, 229);
-    border: solid;
-    border-color: #ffa016;
-    color: #794700;
-}
-
-.alert-banner.py-error > #alert-close-button {
-    color: #9d041c;
-}
-
-.alert-banner.py-warning > #alert-close-button {
-    color: #794700;
-}
-
-#alert-close-button {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
-
-.py-box {
+.py-box{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.py-box div.py-box-child * {
+.py-box div.py-box-child *
+{
     max-width: 100%;
 }
 
-.py-repl-box {
+.py-repl-box{
     flex-direction: column;
 }
 
-.py-repl-editor {
+.editor-box{
     --tw-border-opacity: 1;
     border-color: rgba(209, 213, 219, var(--tw-border-opacity));
     border-width: 1px;
     position: relative;
-    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
     --tw-ring-color: rgba(59, 130, 246, 0.5);
@@ -181,14 +113,14 @@ html {
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(209, 213, 219);
+    border-color: rgb(209, 213, 219)
 }
 
-.editor-box:hover button {
+.editor-box:hover button{
     opacity: 1;
 }
 
-.py-repl-run-button {
+.repl-play-button{
     opacity: 0;
     bottom: 0.25rem;
     right: 0.25rem;
@@ -222,64 +154,65 @@ html {
     border: 0;
 }
 
-.py-repl-run-button:hover {
+.repl-play-button:hover{
     opacity: 1;
 }
 
-.py-title {
+.py-title{
     text-transform: uppercase;
     text-align: center;
 }
 
-.py-title h1 {
+.py-title h1{
     font-weight: 700;
     font-size: 1.875rem;
 }
 
-.py-input {
+.py-input{
     padding: 0.5rem;
     --tw-border-opacity: 1;
     border-color: rgba(209, 213, 219, var(--tw-border-opacity));
     border-width: 1px;
-    border-radius: 0.25rem;
+   border-radius: 0.25rem;
     margin-right: 0.75rem;
     border-style: solid;
     width: auto;
 }
 
-.py-box input.py-input {
+.py-box input.py-input{
     width: -webkit-fill-available;
 }
 
-.central-content {
+.central-content{
     max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 input {
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    -webkit-rtl-ordering: logical;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
 }
 
-.py-button {
+.py-button{
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
     padding: 0.5rem;
@@ -289,22 +222,17 @@ input {
     border-color: rgba(37, 99, 235, var(--tw-border-opacity));
     border-width: 1px;
     border-radius: 0.25rem;
-    cursor: pointer;
 }
 
-.py-li-element p {
+.py-li-element p{
     margin: 5px;
 }
 
-.py-li-element p {
+.py-li-element p{
     display: inline;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
@@ -313,20 +241,4 @@ textarea {
 
 .line-through {
     text-decoration: line-through;
-}
-
-/* ===== py-terminal plugin ===== */
-/* XXX: it would be nice if these rules were stored in e.g. pyterminal.css and
-   bundled together at build time (by rollup?) */
-
-.py-terminal {
-    min-height: 10em;
-    background-color: black;
-    color: white;
-    padding: 0.5rem;
-    overflow: auto;
-}
-
-.py-terminal-hidden {
-    display: none;
 }
