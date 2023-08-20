@@ -27,7 +27,7 @@ To use this extension directly, first clone it to your local machine then
 * Icons are in the `/icons` folder.
 * PyScript/Pyodide files to run this offline or as part of an extension are in the `/runtime` folder.
 * Other magic required for Chrome to recognise this as an extension is in `manifest.json`.
-* `popup.css` is an incredibly simple Cascading Style Sheet which defines the appearance of the Popup - in this case simply the width, height, and background colour.
+* `popup.css` is a super-simple Cascading Style Sheet which defines the appearance of the Popup - in this case simply the width, height, and background colour.
 * `popup.html` defines the page content of the Popup. It includes some simple boiler-plate HTML as well as some examples of Python code which runs under the tags `<py-script>` and/or `<py-repl>`.
 * `popup.html` must include a `<py-config>` block as follows:
 
