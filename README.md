@@ -40,7 +40,7 @@ To use this extension directly, first clone it to your local machine then
    </py-config>
    ```
 
-* `popup.html` must include also include two lines to load PyScript and its default stylesheet into the extension:
+* `popup.html` must also include two lines to load PyScript and its default stylesheet into the extension:
 
    ```html
    <link rel="stylesheet" href="runtime/pyscript.css" />
