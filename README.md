@@ -1,6 +1,6 @@
 # pyscript-local-runtime
 
-This repository gives a framework for running PyScript and all its runtime dependencies locally e.g. to create browser extensions using Python, or offline web apps using PyScript without internet access.
+This repository gives a framework for running PyScript and all its runtime dependencies locally e.g. to create Chrome extension using Python, or offline web apps using PyScript without internet access.
 
 PyScript and its dependency Pyodide continue to evolve and this demo is frozen at Pyodide v0.21.3. You're strongly advised to check out the [latest version of PyScript](https://pyscript.net/).
 
@@ -10,7 +10,7 @@ cd runtime
 source setup.sh
 ```
 
-... or on Windows using the helper script supplied:
+or on Windows using the helper script supplied:
 ```
 cd runtime
 python setup.py
@@ -19,14 +19,14 @@ python setup.py
 ## **EXAMPLE CHROME EXTENSION**
 ![](popup.png)
 
-This example is a simple Chrome Extension which creates a Popup box, renders the time using Python's `datetime` module, and sends a message to the Console.
+This example is a simple Chrome Extension which creates a Popup box and renders the time using Python's `datetime` module.
 
 
-* The Python script is wrapped inside some simple HTML boiler-plate code in `index.html`.
+* The Python script is wrapped inside some simple HTML boiler-plate code in `popup.html`.
 * Icons are in `/icons`
 * Other magic required for Chrome to recognise this as an extension are in `manifest.json`.
 
-`index.html` must include a `<py-config>` block as follows:
+`popup.html` must include a `<py-config>` block as follows:
 
 ```html
 <py-config>
