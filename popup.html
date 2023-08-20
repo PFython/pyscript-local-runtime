@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>PyScript Demo 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <py-config>
+      [[runtimes]]
+      src = "runtime/pyodide.js"
+      name = "pyodide-0.21.3"
+      lang = "python"
+    </py-config>
+    <link rel="icon" type="icons/png" href="/icon-128.png" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link rel="stylesheet" href="runtime/pyscript.css" />
+    <script defer src="runtime/pyscript.js"></script>
+  </head>
+  <body>
+    Hello world!<br>
+<!-- Python code below is intentionally left-aligned to utilise full width  -->
+<py-script>
+from datetime import datetime
 
 print("This is the current date and time, as computed by Python:")
 now = datetime.now()
@@ -9,20 +29,3 @@ print(now)
   </body>
 </html>
 
-<body>
-  Hello world!<br>
-  <!-- Deliberately breaking indendation for easy Copy/Paste of Python code -->
-  <py-script>
-    # demo display
-    import numpy
-
-    # create a 2D array
-    a = numpy.array([[1, 2, 3], [4, 5, 6]])
-    print(a)
-
-
-  </py-script>
-</body>
-<script src="finished.js"></script>
-
-</html>

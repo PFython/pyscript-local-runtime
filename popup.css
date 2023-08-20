@@ -1,0 +1,10 @@
+body {
+  width: 20rem;
+  height: 40rem;
+  background: orange;
+}
+
+h3,
+p {
+  text-align: center;
+}
