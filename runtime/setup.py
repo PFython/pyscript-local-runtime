@@ -6,6 +6,8 @@ from log2d import Log
 
 dir_path = Path(__file__).parent
 
+# Adding """""" instead of "" for downloads because I was facing syntax error.
+
 downloads = """
     https://pyscript.net/latest/pyscript.js
     https://pyscript.net/latest/pyscript.css
