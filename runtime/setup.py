@@ -6,7 +6,9 @@ from log2d import Log
 
 dir_path = Path(__file__).parent
 
-downloads = "
+# Adding """""" instead of "" for downloads because I was facing syntax error.
+
+downloads = """
     https://pyscript.net/latest/pyscript.js
     https://pyscript.net/latest/pyscript.css
     https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js
@@ -19,7 +21,7 @@ downloads = "
     https://cdn.jsdelivr.net/pyodide/v0.21.3/full/distutils.tar
     https://cdn.jsdelivr.net/pyodide/v0.21.3/full/micropip-0.1-py3-none-any.whl
     https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyparsing-3.0.9-py3-none-any.whl
-".split()
+""".split()
 
 if __name__ == "__main__":
     Log("setup")
